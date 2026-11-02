@@ -1,6 +1,6 @@
 # Thai Government Lottery Results 2553–2569 (2010–2026) · ผลสลากกินแบ่งรัฐบาลย้อนหลัง
 
-**397 draws · 1 March 2010 (2553) – 16 October 2026 (2569) · every prize tier · CSV + JSON · CC BY 4.0**
+**398 draws · 1 March 2010 (2553) – 1 November 2026 (2569) · every prize tier · CSV + JSON · CC BY 4.0**
 
 Source: [huayreview.net](https://huayreview.net/stats/ten-year-data/) · underlying results published by the
 Government Lottery Office of Thailand ([glo.or.th](https://www.glo.or.th/)).
@@ -13,21 +13,21 @@ Government Lottery Office of Thailand ([glo.or.th](https://www.glo.or.th/)).
 
 ### What this is
 A clean, machine-readable record of every Thai Government Lottery draw result from the first draw available in
-the Government Lottery Office's public results (1 March 2010 / 2553) to the latest draw (16 October 2026 / 2569).
+the Government Lottery Office's public results (1 March 2010 / 2553) to the latest draw (1 November 2026 / 2569).
 Every prize tier is included: first prize, near-first prizes, 2nd–5th prizes, front three digits, last three digits
 and last two digits.
 
 ### Files
 | File | Rows | Description |
 |---|---|---|
-| `thai-lottery-results.csv` | 397 | One row per draw (wide format). |
-| `thai-lottery-results-long.csv` | 68,681 | One row per winning number (long / tidy format). |
-| `thai-lottery-results.json` | 397 draws | Same data, prize fields as arrays, plus metadata. |
+| `thai-lottery-results.csv` | 398 | One row per draw (wide format). |
+| `thai-lottery-results-long.csv` | 68,854 | One row per winning number (long / tidy format). |
+| `thai-lottery-results.json` | 398 draws | Same data, prize fields as arrays, plus metadata. |
 | `DATA_DICTIONARY.md` | – | Full column descriptions. |
 | `CHECKSUMS.sha1` | – | SHA-1 of each data file. |
 
 Draws per Buddhist Era year: 2553: 21 (results start 1 Mar 2010) · 2554–2562: 24 each · 2563: 21 (no draws
-16 Apr–16 May 2020) · 2564–2566: 24 each · 2567: 23 · 2568: 24 · 2569: 20 (to 16 Oct 2026).
+16 Apr–16 May 2020) · 2564–2566: 24 each · 2567: 23 · 2568: 24 · 2569: 21 (to 1 Nov 2026).
 
 ### Columns (wide CSV)
 `draw_date` (ISO `YYYY-MM-DD`), `draw_date_be` (Buddhist Era `YYYY-MM-DD`), `draw_date_th` (Thai long date),
@@ -44,8 +44,8 @@ published: the official 2019-08-01 result sheet lists fifth prize `354809` twice
 ### Source and verification
 - **Source:** results published by the Government Lottery Office of Thailand (glo.or.th), taken from its public
   results service; each row links to the official result sheet PDF (`glo_result_pdf`).
-- **Verification:** every one of the 397 draws was cross-checked against a second, independent public results
-  source. The first prize, front three digits, last three digits and last two digits matched for **397/397 draws**.
+- **Verification:** every one of the 398 draws was cross-checked against a second, independent public results
+  source. The first prize, front three digits, last three digits and last two digits matched for **398/398 draws**.
   The data also passed automated checks: unique dates, correct count of numbers per prize tier, correct digit length,
   near-first prizes equal to first prize ±1.
 - Always confirm against the official GLO result sheet before claiming a prize.
@@ -91,13 +91,13 @@ BibTeX:
 
 ### ชุดข้อมูลนี้คืออะไร
 ผลสลากกินแบ่งรัฐบาลครบทุกงวด ตั้งแต่งวดแรกที่มีในระบบผลรางวัลสาธารณะของสำนักงานสลากกินแบ่งรัฐบาล
-(1 มีนาคม 2553) จนถึงงวดล่าสุด (16 ตุลาคม 2569) รวม **397 งวด** ครบทุกรางวัล ได้แก่ รางวัลที่ 1
+(1 มีนาคม 2553) จนถึงงวดล่าสุด (1 พฤศจิกายน 2569) รวม **398 งวด** ครบทุกรางวัล ได้แก่ รางวัลที่ 1
 รางวัลข้างเคียงรางวัลที่ 1 รางวัลที่ 2–5 เลขหน้า 3 ตัว เลขท้าย 3 ตัว และเลขท้าย 2 ตัว
 ในรูปแบบ CSV และ JSON ที่นำไปใช้กับโปรแกรมได้ทันที
 
 ### ไฟล์
-- `thai-lottery-results.csv` — 1 แถวต่อ 1 งวด (397 แถว)
-- `thai-lottery-results-long.csv` — 1 แถวต่อ 1 เลขที่ถูกรางวัล (68,681 แถว)
+- `thai-lottery-results.csv` — 1 แถวต่อ 1 งวด (398 แถว)
+- `thai-lottery-results-long.csv` — 1 แถวต่อ 1 เลขที่ถูกรางวัล (68,854 แถว)
 - `thai-lottery-results.json` — ข้อมูลชุดเดียวกัน แบบ JSON พร้อมข้อมูลกำกับ
 - `DATA_DICTIONARY.md` — คำอธิบายคอลัมน์ทั้งหมด
 
@@ -115,7 +115,7 @@ BibTeX:
 ### ที่มาและวิธีตรวจสอบ
 - **ที่มา:** ผลรางวัลที่สำนักงานสลากกินแบ่งรัฐบาลประกาศ (glo.or.th) ทุกงวดมีลิงก์ใบตรวจผลทางการแนบไว้
 - **การตรวจสอบ:** ทุกงวดตรวจเทียบกับแหล่งผลรางวัลสาธารณะแหล่งที่สอง รางวัลที่ 1 เลขหน้า 3 ตัว
-  เลขท้าย 3 ตัว และเลขท้าย 2 ตัว ตรงกัน **397 จาก 397 งวด** และผ่านการตรวจอัตโนมัติ
+  เลขท้าย 3 ตัว และเลขท้าย 2 ตัว ตรงกัน **398 จาก 398 งวด** และผ่านการตรวจอัตโนมัติ
   (วันที่ไม่ซ้ำ จำนวนเลขแต่ละรางวัลถูกต้อง จำนวนหลักถูกต้อง รางวัลข้างเคียง = รางวัลที่ 1 ±1)
 - ก่อนขึ้นเงินรางวัล ให้ตรวจกับใบตรวจผลทางการของสำนักงานสลากฯ อีกครั้งเสมอ
 

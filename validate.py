@@ -7,7 +7,7 @@ W = list(csv.DictReader(open(os.path.join(H, 'thai-lottery-results.csv'), encodi
 J = json.load(open(os.path.join(H, 'thai-lottery-results.json'), encoding='utf-8'))
 L = list(csv.DictReader(open(os.path.join(H, 'thai-lottery-results-long.csv'), encoding='utf-8')))
 TH = ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม']
-chk(len(W) == 397, f'wide rows {len(W)} != 397'); chk(J['draw_count'] == len(J['draws']) == len(W), 'json count mismatch')
+chk(len(W) == 398, f'wide rows {len(W)} != 398'); chk(J['draw_count'] == len(J['draws']) == len(W), 'json count mismatch')
 dates = [r['draw_date'] for r in W]
 chk(len(set(dates)) == len(dates), 'duplicate draw_date'); chk(dates == sorted(dates), 'not sorted')
 chk(len({tuple(r.values()) for r in W}) == len(W), 'duplicate rows')

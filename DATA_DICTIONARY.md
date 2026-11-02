@@ -3,13 +3,13 @@
 All prize numbers are stored as **text** (strings) so leading zeros are kept (e.g. `045998`, `07`).
 When loading with pandas use `dtype=str`; in spreadsheets import the columns as Text.
 
-## thai-lottery-results.csv (one row per draw, 397 rows)
+## thai-lottery-results.csv (one row per draw, 398 rows)
 
 | Column | Type | Description |
 |---|---|---|
 | `draw_date` | date, ISO 8601 `YYYY-MM-DD` (Gregorian) | Official draw date. Primary key, unique. |
 | `draw_date_be` | text `YYYY-MM-DD` (Thai Buddhist Era) | Same date with the Buddhist Era year (Gregorian year + 543). |
-| `draw_date_th` | text | Thai long date, e.g. `16 ตุลาคม 2569`. |
+| `draw_date_th` | text | Thai long date, e.g. `1 พฤศจิกายน 2569`. |
 | `year_be` | integer | Buddhist Era year of the draw (2553–2569). |
 | `first_prize` | text, 6 digits | First prize number (1 number). |
 | `near_first_prize` | text, 6 digits × 2, `;`-separated | Numbers adjacent to the first prize (first prize −1 and +1). |
@@ -26,7 +26,7 @@ Within each cell, numbers are sorted ascending.
 
 **Known quirk (kept as published):** in the official result sheet for the 2019-08-01 (2562-08-01) draw, the fifth-prize number `354809` is printed twice, so that cell lists it twice and the long file has two identical rows for it.
 
-## thai-lottery-results-long.csv (one row per winning number, 68,681 rows)
+## thai-lottery-results-long.csv (one row per winning number, 68,854 rows)
 
 | Column | Type | Description |
 |---|---|---|
@@ -38,7 +38,7 @@ Within each cell, numbers are sorted ascending.
 ## thai-lottery-results.json
 
 Object with metadata (`name`, `source`, `compiled_by`, `citation`, `license`, `draw_count`, `first_draw`, `last_draw`, `generated`)
-and `draws`: an array of 397 objects with the same fields as the wide CSV, where every prize field is an **array of strings**.
+and `draws`: an array of 398 objects with the same fields as the wide CSV, where every prize field is an **array of strings**.
 
 ## Not included (on purpose)
 
